@@ -1,4 +1,5 @@
-<div class="webtools-wrapper">
+<div class="webtools-wrapper__center">
+<div class="webtools-wrapper__margin">
 
 <?php
 /**
@@ -46,4 +47,5 @@ get_header(); ?>
 
 <?php get_footer(); ?>
 
-</div>
+</div>  <!-- webtools-wrapper__center -->
+</div>  <!-- webtools-wrapper__margin -->

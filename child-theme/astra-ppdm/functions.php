@@ -22,12 +22,3 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
-
-
-add_filter( 'render_block', function( $block_content, $block ) {
-  // Target core/* and core-embed/* blocks.
-  if ( preg_match( '~^core/|core-embed/~', $block['blockName'] ) ) {
-     $block_content = sprintf( '<div class="some__class">%s</div>', $block_content );
-  }
-  return $block_content;
-}, PHP_INT_MAX - 1, 2 );
